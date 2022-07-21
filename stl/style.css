@@ -1,20 +1,8 @@
-@font-face {
-    font-family: 'Agency FB';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Agency FB'), local('AgencyFB-Regular'),
-        url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),
-        url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype');
-}
+@import url(https://allfont.net/allfont.css?fonts=agency-fb);
+/* 'Agency FB' */
 
-@font-face {
-    font-family: 'Agency FB Bold';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Agency FB Bold'), local('AgencyFB-Bold'),
-        url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),
-        url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype');
-}
+@import url(https://allfont.net/allfont.css?fonts=agency-fb-bold);
+/* 'Agency FB Bold' */
 
 :root {
     --fonte-destaque: 'Agency FB Bold', Arial;
