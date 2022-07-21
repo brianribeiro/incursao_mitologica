@@ -38,6 +38,12 @@ header h1, a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 900px) {
+    header h1, a {
+        font-size: 1.4em;
+    }
+}
+
 /* Aqui começa o ícone do menu */
 
 #menu {
@@ -45,6 +51,12 @@ header h1, a {
     float: right;
     margin: -58px 50px 0px 0px;
     padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    #menu {
+        margin: -48px 50px 0px 0px;
+    }
 }
 
 div.hamb_menu {
@@ -127,7 +139,13 @@ section {
     margin: 12px;
 }
 
-section p {
+@media only screen and (max-width: 900px) {
+    section {
+        max-width: 100%;
+    }
+}
+
+section p, li {
     font-family: var(--fonte-padrao);
     font-size: 1.7em;
     text-align: justify;
@@ -135,12 +153,9 @@ section p {
 }
 
 section li {
-    font-family: var(--fonte-padrao);
     font-size: 1.6em;
-    text-align: justify;
     list-style-type: none;
     text-indent: 20px;
-    padding: 10px;
 }
 
 section > h1 {
@@ -177,6 +192,12 @@ article.content {
     align-items: center;
 }
 
+@media only screen and (max-width: 900px) {
+    article.content {
+        flex-direction: column;
+    }
+}
+
 article.content_column {
     display: flex;
     flex-direction: column;
@@ -188,6 +209,15 @@ div.texto {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    div.texto {
+        width: 100%;
+        border: none;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 0px;
+    }
 }
 
 div.texto_solo {
@@ -203,6 +233,16 @@ a.a_text {
 div.img {
     width: 50%;
     text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    div.img {
+        width: 100%;
+    }
+}
+
+div.img > img {
+    cursor: pointer;
 }
 
 img#img_apres {

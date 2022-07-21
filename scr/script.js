@@ -9,11 +9,13 @@ function closeNav() {
     document.body.style.opacity = '100%'
 }
 
+/* A estudar
 function Titulo() {
     document.getElementById('main').style.opacity = '0%'
     document.getElementById('header').style.marginTop = '-102px'
     document.getElementById('footer').style.display = 'none'
 }
+*/
 
 function Home() {
     document.getElementById('apresentacao').style.display = 'inline'
