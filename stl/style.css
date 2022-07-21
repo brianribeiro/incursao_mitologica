@@ -24,32 +24,38 @@ body {
     background-size: cover;
     color: rgb(70, 70, 70);
 }
-
+/*
+@media only screen and (max-width: 900px) {
+    body {
+        background: black center center no-repeat fixed;
+    }
+}
+*/
 header {
     padding: 20px 0px 20px 50px;
     background-color: #000000;
     transition: 0.3s;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     header {
         padding: 20px 0px 20px 10px;
     }
 }
-
+*/
 header h1, a {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 1.8em;
     text-decoration: none;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     header h1, a {
         font-size: 1.4em;
     }
 }
-
+*/
 /* Aqui começa o ícone do menu */
 
 #menu {
@@ -58,13 +64,13 @@ header h1, a {
     margin: -58px 50px 0px 0px;
     padding: 10px;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     #menu {
         margin: -48px 10px 0px 0px;
     }
 }
-
+*/
 div.hamb_menu {
     
     width: 35px;
@@ -144,13 +150,13 @@ section {
     border-radius: 10px;
     margin: 12px;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     section {
         max-width: 100%;
     }
 }
-
+*/
 section p, li {
     font-family: var(--fonte-padrao);
     font-size: 1.7em;
@@ -163,7 +169,7 @@ section li {
     list-style-type: none;
     text-indent: 20px;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     section p {
         font-size: 1.2em;
@@ -173,7 +179,7 @@ section li {
         font-size: 1.1em;
     }
 }
-
+*/
 section > h1 {
     text-align: center;
     padding: 0px 0px 30px 0px;
@@ -181,13 +187,13 @@ section > h1 {
     font-size: 2.6em;
     color: rgb(0, 0, 0);
 }
-
+/*
 @media only screen and (max-width: 900px) {
     section > h1 {
         font-size: 2em;
     }
 }
-
+*/
 section > img.img_section {
     display: block;
     margin: auto;
@@ -202,13 +208,13 @@ article h2 {
     padding: 50px 0px 20px 10px;
     color: rgb(50, 50, 50);
 }
-
+/*
 @media only screen and (max-width: 900px) {
     article h2 {
         font-size: 1.7em;
     }
 }
-
+*/
 hr {
     padding: 0px 10px;
     margin: auto;
@@ -219,13 +225,13 @@ article.content {
     flex-direction: row;
     align-items: center;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     article.content {
         flex-direction: column;
     }
 }
-
+*/
 article.content_column {
     display: flex;
     flex-direction: column;
@@ -238,7 +244,7 @@ div.texto {
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     div.texto {
         width: 100%;
@@ -247,7 +253,7 @@ div.texto {
         border-radius: 0px;
     }
 }
-
+*/
 div.texto_solo {
     width: 100%;
 }
@@ -262,13 +268,13 @@ div.img {
     width: 50%;
     text-align: center;
 }
-
+/*
 @media only screen and (max-width: 900px) {
     div.img {
         width: 100%;
     }
 }
-
+*/
 div.img > img {
     cursor: pointer;
 }
@@ -333,4 +339,57 @@ section#manga {
 
 section#regras {
     display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background: black center center no-repeat fixed;
+    }
+
+    header {
+        padding: 20px 0px 20px 10px;
+    }
+
+    header h1, a {
+        font-size: 1.4em;
+    }
+
+    #menu {
+        margin: -48px 10px 0px 0px;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    section p {
+        font-size: 1.2em;
+    }
+
+    section li {
+        font-size: 1.1em;
+    }
+
+    section > h1 {
+        font-size: 2em;
+    }
+
+    article h2 {
+        font-size: 1.7em;
+    }
+
+    article.content {
+        flex-direction: column;
+    }
+
+    div.texto {
+        width: 100%;
+        border: none;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 0px;
+    }
+
+    div.img {
+        width: 100%;
+    }
 }
