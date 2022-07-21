@@ -31,6 +31,12 @@ header {
     transition: 0.3s;
 }
 
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 20px 0px 20px 10px;
+    }
+}
+
 header h1, a {
     color: white;
     font-family: var(--fonte-destaque);
@@ -55,7 +61,7 @@ header h1, a {
 
 @media only screen and (max-width: 900px) {
     #menu {
-        margin: -48px 50px 0px 0px;
+        margin: -48px 10px 0px 0px;
     }
 }
 
@@ -158,12 +164,28 @@ section li {
     text-indent: 20px;
 }
 
+@media only screen and (max-width: 900px) {
+    section p {
+        font-size: 1.2em;
+    }
+
+    section li {
+        font-size: 1.1em;
+    }
+}
+
 section > h1 {
     text-align: center;
     padding: 0px 0px 30px 0px;
     font-family: var(--fonte-destaque);
     font-size: 2.6em;
     color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 900px) {
+    section > h1 {
+        font-size: 2em;
+    }
 }
 
 section > img.img_section {
@@ -179,6 +201,12 @@ article h2 {
     font-size: 2em;
     padding: 50px 0px 20px 10px;
     color: rgb(50, 50, 50);
+}
+
+@media only screen and (max-width: 900px) {
+    article h2 {
+        font-size: 1.7em;
+    }
 }
 
 hr {
