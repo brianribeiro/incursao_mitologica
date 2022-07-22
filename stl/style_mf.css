@@ -244,6 +244,23 @@ img#img_manga {
     width: 75%;
 }
 
+.btn_details {
+    font-family: var(--fonte-padrao);
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(50, 50, 50);
+    background-color: rgb(235, 235, 235);
+}
+
+.btn_details:hover {
+    cursor: pointer;
+    font-family: var(--fonte-destaque);
+    box-sizing: border-box;
+    background-color: rgb(160, 160, 160);
+}
+
 #footer {
     padding: 10px;
     background-color: #000000;
@@ -334,6 +351,10 @@ section#regras {
     div.img {
         width: 50%;
     }
+
+    .btn_details {
+        font-size: 1.1em;
+    }
 }
 
 @media only screen and (min-width: 1081px) {
@@ -387,5 +408,9 @@ section#regras {
 
     div.img {
         width: 50%;
+    }
+
+    .btn_details {
+        font-size: 1.3em;
     }
 }

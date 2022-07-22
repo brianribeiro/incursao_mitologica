@@ -146,3 +146,40 @@ function Regras() {
     document.getElementById('sidenav').style.width = '0'
     document.body.style.opacity = '100%'
 }
+
+//-AQUI TERMINAM AS PÁGINAS---------------------------------------
+//-AQUI COMEÇAM OS DETALHES DAS IMAGENS---------------------------
+
+var counter_atq = 0
+var counter_mag = 0
+var counter_inv = 0
+
+function ataqueDetailed() {
+    counter_atq = counter_atq + 1
+
+    if (counter_atq % 2 == 1) {
+        document.getElementById('img_atq').src = 'img/ataque_detailed.jpg'
+    } else {
+        document.getElementById('img_atq').src = 'img/ataque_s.jpg'
+    }
+}
+
+function magiaDetailed() {
+    counter_mag = counter_mag + 1
+
+    if (counter_mag % 2 == 1) {
+        document.getElementById('img_mag').src = 'img/magia_detailed.jpg'
+    } else {
+        document.getElementById('img_mag').src = 'img/magia_s.jpg'
+    }
+}
+
+function invocacaoDetailed() {
+    counter_inv = counter_inv + 1
+
+    if (counter_inv % 2 == 1) {
+        document.getElementById('img_inv').src = 'img/invocacao_detailed.jpg'
+    } else {
+        document.getElementById('img_inv').src = 'img/invocacao_s.jpg'
+    }
+}
