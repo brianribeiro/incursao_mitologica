@@ -9,13 +9,59 @@ function closeNav() {
     document.body.style.opacity = '100%'
 }
 
-/* A estudar
-function Titulo() {
-    document.getElementById('main').style.opacity = '0%'
+//-AQUI TERMINA O MENU--------------------------------------------
+//-AQUI COMEÇA O FADE ESCONDIDO-----------------------------------
+
+var opacity = 0
+var intervalID = 0
+
+function fadeOut() {
+    setInterval(hide, 50)
+}
+
+function hide() {
+    var main = document.getElementById('main')
+    opacity = Number(window.getComputedStyle(main).getPropertyValue('opacity'))
+    if(opacity > 0){
+        opacity = opacity - 0.1
+        main.style.opacity = opacity
+    } else {
+        clearInterval(intervalID)
+        clearInterval(timeout)
+    }
     document.getElementById('header').style.marginTop = '-102px'
     document.getElementById('footer').style.display = 'none'
+    return delay()
 }
-*/
+
+var timeout
+
+function delay() {
+    timeout = setTimeout(fadeIn, 2000)
+}
+
+function fadeIn() { // A FIXAR
+    setInterval(show, 50)
+}
+
+function show() {
+    var main = document.getElementById('main')
+    opacity = Number(window.getComputedStyle(main).getPropertyValue('opacity'))
+    if(opacity<1){
+        opacity = opacity + 0.1
+        main.style.opacity = opacity
+    } else {
+        clearInterval(intervalID)
+        clearTimeout(timeout)
+    }
+    document.getElementById('header').style.marginTop = '0px'
+    document.getElementById('footer').style.display = 'block'
+    document.getElementById('titulo').removeAttribute('onclick')
+    document.getElementById('titulo').removeAttribute('href')
+}
+
+//-AQUI TERMINA O FADE ESCONDIDO----------------------------------
+//-AQUI COMEÇAM AS PÁGINAS----------------------------------------
 
 function Home() {
     document.getElementById('apresentacao').style.display = 'inline'
