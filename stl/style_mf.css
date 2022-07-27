@@ -21,6 +21,7 @@ html {
 
 body {
     color: rgb(70, 70, 70);
+    min-height: 100vh;
 }
 
 header {
@@ -297,6 +298,14 @@ section#manga {
 
 section#regras {
     display: none;
+}
+
+@media only screen and (min-height: 700px) {
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
 }
 
 @media only screen and (min-width: 721px) {
