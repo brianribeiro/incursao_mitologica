@@ -1,12 +1,9 @@
-@import url(https://allfont.net/allfont.css?fonts=agency-fb);
-/* 'Agency FB' */
-
-@import url(https://allfont.net/allfont.css?fonts=agency-fb-bold);
-/* 'Agency FB Bold' */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;600&display=swap');
+/* 'Khand' */
 
 :root {
-    --fonte-destaque: 'Agency FB Bold', Arial;
-    --fonte-padrao: 'Agency FB', Arial;
+    --fonte-destaque: 'Khand', Arial, sans-serif;
+    --fonte-padrao: 'Khand', Arial, sans-serif;
 }
 
 * {
@@ -20,8 +17,12 @@ html {
 }
 
 body {
-    color: rgb(70, 70, 70);
+    background: black url('../img/fundo.jpg') center center no-repeat fixed;
+    background-size: cover;
+    color: rgb(60, 60, 60);
     min-height: 100vh;
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
 }
 
 header {
@@ -42,7 +43,7 @@ header h1, a {
 #menu {
     cursor: pointer;
     float: right;
-    margin: -48px 10px 0px 0px;
+    margin: -54px 10px 0px 0px;
     padding: 10px;
 }
 
@@ -77,12 +78,11 @@ nav#sidenav {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 1;
     right: 0;
     background-color: #000000;
     overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 nav#sidenav a {
@@ -128,6 +128,7 @@ section {
 
 section p, li {
     font-family: var(--fonte-padrao);
+    font-weight: 300;
     font-size: 1.2em;
     text-align: justify;
     padding: 10px;
@@ -323,7 +324,7 @@ section#regras {
     }
 
     #menu {
-        margin: -56px 10px 0px 0px;
+        margin: -65px 10px 0px 0px;
     }
 
     section {
@@ -381,7 +382,7 @@ section#regras {
     }
 
     #menu {
-        margin: -58px 50px 0px 0px;
+        margin: -70px 50px 0px 0px;
     }
 
     section {

@@ -1,12 +1,22 @@
+var nav = 0
+var menu = document.getElementById('menu')
+
 function openNav() {
-    document.getElementById('sidenav').style.width = '250px'
-    document.body.style.opacity = '80%'
-
-}
-
-function closeNav() {
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    nav = nav + 1
+    if (nav % 2 == 1) {
+        document.getElementById('sidenav').style.width = '250px'
+        document.body.style.opacity = '80%'
+        menu.classList.toggle("change");
+        document.getElementById('body').style.overflow = 'hidden'
+        return true
+    } else {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+        menu.classList.toggle("change");
+        document.getElementById('body').style.overflowY = 'scroll'
+        document.getElementById('body').style.overflowX = 'hidden'
+        return false
+    }
 }
 
 //-AQUI TERMINA O MENU--------------------------------------------
@@ -71,8 +81,10 @@ function Home() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 function Campo() {
@@ -83,8 +95,11 @@ function Campo() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
+    
 }
 
 function Ataque() {
@@ -95,8 +110,10 @@ function Ataque() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 function Magia() {
@@ -107,8 +124,10 @@ function Magia() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 function Invocacao() {
@@ -119,8 +138,10 @@ function Invocacao() {
     document.getElementById('invocacao').style.display = 'inline'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 function Manga() {
@@ -131,8 +152,10 @@ function Manga() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'inline'
     document.getElementById('regras').style.display = 'none'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 function Regras() {
@@ -143,8 +166,10 @@ function Regras() {
     document.getElementById('invocacao').style.display = 'none'
     document.getElementById('manga').style.display = 'none'
     document.getElementById('regras').style.display = 'inline'
-    document.getElementById('sidenav').style.width = '0'
-    document.body.style.opacity = '100%'
+    if (openNav() == false) {
+        document.getElementById('sidenav').style.width = '0'
+        document.body.style.opacity = '100%'
+    }
 }
 
 //-AQUI TERMINAM AS PÁGINAS---------------------------------------
