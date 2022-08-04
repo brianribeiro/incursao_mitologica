@@ -158,6 +158,16 @@ function Manga() {
     }
 }
 
+function Manga_Jogar() {
+    document.getElementById('apresentacao').style.display = 'none'
+    document.getElementById('campo').style.display = 'none'
+    document.getElementById('ataque').style.display = 'none'
+    document.getElementById('magia').style.display = 'none'
+    document.getElementById('invocacao').style.display = 'none'
+    document.getElementById('manga').style.display = 'inline'
+    document.getElementById('regras').style.display = 'none'
+}
+
 function Regras() {
     document.getElementById('apresentacao').style.display = 'none'
     document.getElementById('campo').style.display = 'none'

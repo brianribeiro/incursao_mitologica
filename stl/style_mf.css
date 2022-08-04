@@ -115,10 +115,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 section {
     max-width: 100%;
+    min-height: 100vh;
     padding: 20px;
     background-color: white;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
@@ -299,14 +301,6 @@ section#manga {
 
 section#regras {
     display: none;
-}
-
-@media only screen and (min-height: 700px) {
-    #footer {
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-    }
 }
 
 @media only screen and (min-width: 721px) {
