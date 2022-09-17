@@ -55,8 +55,6 @@ function fadeIn() { // A FIXAR
 }
 
 function show() {
-    var main = document.getElementById('main')
-    opacity = Number(window.getComputedStyle(main).getPropertyValue('opacity'))
     if(opacity<1){
         opacity = opacity + 0.1
         main.style.opacity = opacity
@@ -85,6 +83,16 @@ function Home() {
         document.getElementById('sidenav').style.width = '0'
         document.body.style.opacity = '100%'
     }
+}
+
+function Home_Click() {
+    document.getElementById('apresentacao').style.display = 'inline'
+    document.getElementById('campo').style.display = 'none'
+    document.getElementById('ataque').style.display = 'none'
+    document.getElementById('magia').style.display = 'none'
+    document.getElementById('invocacao').style.display = 'none'
+    document.getElementById('manga').style.display = 'none'
+    document.getElementById('regras').style.display = 'none'
 }
 
 function Campo() {
